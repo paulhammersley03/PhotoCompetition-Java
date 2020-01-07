@@ -1,18 +1,43 @@
 // Partial for the Nav Bar
 
 .navbar {
-  background-color: #DDDDDD;
-  height: 64px;
+    background-color: #44a3cf;
+    height: 100px;
+    -webkit-box-align: center;
+    align-self: center;
+    font-family: Arial;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #092d69
 }
 
 .navbar-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
   height: 100%;
   margin: 0;
-  padding: 0;
-
-  list-style: none;
+  padding: 0;  
 }
+
+.navbar-item {
+    font-family: arial;
+    font-style: normal;
+    text-decoration: none; 
+}
+
+.navbar-link {
+    color: #092d69;
+    font-size: 25px;
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fc4103;
+}
+
+
+
+

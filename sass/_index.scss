@@ -1,20 +1,40 @@
 // Partial for the Index page
 
 .image-container, #main-image {
-  width: 100%;
+  width: 70%; 
+  height: 500; 
 }
 
 .voting-buttons {
   display: flex;
   justify-content: center;
   padding: 8px;
+  
 
   .voting-button {
-    padding: 8px;
+    padding: 0px 8px;
     margin: 0 8px;
+    background-color: #375d9e;
+    border: 2px solid #092d69;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    vertical-align: middle;
+    font-size: 20px;
+    text-align: center;
+    color: #092d69;
   }
+
+  .voting-button:hover {
+    background-color: #092d69;
+    border: 2px solid #375d9e;
+    color: #375d9e;
+  }  
 }
 
 .image-details {
-  width: 100%;
+  width: 50%;
+  align-content: center;
 }
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Essential meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Softwire Web Development Training Example">
+    <meta name="author" content="Softwire">
+
+    <!-- Title -->
+    <title>Photo Competition - Winner</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../stylesheets/common.css">
+
+    <!-- Vendor JS -->
+    <script src="../js/vendor/jquery-3.3.1.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/common.js"></script>
+    <script src="../js/winner.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div class="navbar" id='nav-bar'>
+    <ul class="navbar-list">
+        <em class="navbar-item"><a class="navbar-link" href="index.html">Photo Competition</a></em>
+        <em class="navbar-item">|</a></em>
+        <em class="navbar-item"><a class="navbar-link" href="winner.html">Top Voted</a></em>
+        <em class="navbar-item">|</a></em>
+        <em class="navbar-item"><a class="navbar-link" href="about.html">About</a></em>
+    </ul>
+</div>
+
+
+<!-- Page content -->
+<div class='main-content'>
+
+    <td class="main-content">
+
+        <center><h1 class="page-title">Photo Competition Winner</h1></center>
+
+        <center><div class="image-container">
+            <!-- src and alt attribute will be populated by index.js on page load -->
+            <img id="main-image" src="">
+        </div></center>
+            
+            <!-- Image Details -->
+        <center><table class="image-details">
+            <tbody>
+                <tr>
+                    <td><b>Author</b></td>
+                    <td id="author"></td>
+                </tr>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td id="name"></td>
+                </tr>
+                <tr>
+                    <td><b>Score</b></td>
+                    <td id="score"></td>
+                </tr>
+                <tr>
+                    <td><b>Licence</b></td>
+                    <td id="licence"></td>
+                </tr>
+            </tbody>
+        </table></center>
+    
+    </td>
+
+</div>
+
+</body>
+</html>

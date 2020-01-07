@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
     <!-- Essential meta tags -->
@@ -24,44 +24,55 @@
 <body>
 
 <!-- Navigation bar -->
-<nav class="navbar main-content">
-    <ul class="navbar-list">
-        <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+<div class="navbar" id='nav-bar'>
+    <ul class="navbar-list" width=100%>
+        <em class="navbar-item"><a class="navbar-link" href="index.html">Photo Competition</a></em>
+        <em class="navbar-item">|</a></em>
+        <em class="navbar-item"><a class="navbar-link" href="winner.html">Top Voted</a></em>
+        <em class="navbar-item">|</a></em>
+        <em class="navbar-item"><a class="navbar-link" href="about.html">About</a></em>
     </ul>
-</nav>
+</div>
+
+
 
 <!-- Page content -->
-<div class="main-content">
-    <h1 class="page-title">Photo Competition</h1>
+    <div class="main-content" id='main'>
+        <center><h1 class="page-title">Photo Competition</h1></center>
 
-    <div class="image-container">
-        <!-- src and alt attribute will be populated by index.js on page load -->
-        <img id="main-image" src="">
+        <center><div class="image-container">
+            <!-- src and alt attribute will be populated by index.js on page load -->
+            <img id="main-image" src="">
+        </div></center>
+
+            <!-- Voting Buttons -->
+        <div class="voting-buttons">
+            <button class="voting-button vote-up" id="Like">Love it</button>
+            <button class="voting-button vote-down" id="DontLike">Hate it</button>
+        </div>
+
+            <!-- Image Details -->
+        <center><table class="image-details">
+            <tbody>
+                <tr>
+                    <td><b>Author</b></td>
+                    <td id="author"></td>
+                </tr>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td id="name"></td>
+                </tr>
+                <tr>
+                    <td><b>Score</b></td>
+                    <td id="score"></td>
+                </tr>
+                <tr>
+                    <td><b>Licence</b></td>
+                    <td id="licence"></td>
+                </tr>
+            </tbody>
+        </table></center>
     </div>
-
-    <div class="voting-buttons">
-        <button class="voting-button vote-up">I love it</button>
-        <button class="voting-button vote-down">I hate it</button>
-    </div>
-
-    <table class="image-details">
-        <tbody>
-            <tr>
-                <td><b>Author</b></td>
-                <td>TODO: Fill in author details.</td>
-            </tr>
-            <tr>
-                <td><b>Name</b></td>
-                <td>TODO: Fill in image details.</td>
-            </tr>
-            <tr>
-                <td><b>Licence</b></td>
-                <td>TODO: Fill in licence details.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
 
 </body>
 </html>

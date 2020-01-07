@@ -1,0 +1,23 @@
+{
+  "name": "photocompetition-java",
+  "version": "1.0.0",
+  "description": "Photo Competition - Basic Framework\r ================================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulhammersley03/PhotoCompetition-Java.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulhammersley03/PhotoCompetition-Java/issues"
+  },
+  "homepage": "https://github.com/paulhammersley03/PhotoCompetition-Java#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
