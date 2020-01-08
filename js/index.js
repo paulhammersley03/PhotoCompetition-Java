@@ -1,6 +1,14 @@
 'use strict';
 // JavaScript for use with the index page.
 
+function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+      end = new Date().getTime();
+   }
+  }
+
 function loadRandomImage() {
     fetch(buildUrl('/random'))
         .then(function (response) {
@@ -25,11 +33,13 @@ function loadRandomImage() {
             
             $('#Like').click(function () {
                 $.post(buildUrl('/id/' + json.id + '/vote/up'));
+                wait(500);
                 window.location.reload();
             })
 
             $('#DontLike').click(function () {
                 $.post(buildUrl('/id/' + json.id + '/vote/down'));
+                wait(500);
                 window.location.reload();
             })       
         })

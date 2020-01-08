@@ -9,10 +9,12 @@ body {
     background-color: white;
 }
 
-div.main-content {
+.main-content {
+
     background-color: #44a3cf;
     width: 70%;
-    align-content: center;
+    font-family: arial;
+    color: #092d69;
     text-align: center;    
     border: 2px solid #092d69;
     border-radius: 10px;
@@ -20,29 +22,26 @@ div.main-content {
     margin-top: 15px;
 }
 
-div.image-container {
-    text-align: center;
-}
-
 .image-details {
     width: 50%;
-    align-self: center;
-    border: none;
 }
 
 h1 {
     font-family: arial;
     font-size: 24px;
     color: #092d69;
+    font-weight: normal;
 }
 
+.about {
+    margin: auto;
+}
 
+.upload {
+    width: 60%;
+    margin: auto;
+}
 
-
-
-
-
-
-
-
-
+.details {
+    text-align: center;
+}

@@ -3,8 +3,6 @@
 .navbar {
     background-color: #44a3cf;
     height: 100px;
-    -webkit-box-align: center;
-    align-self: center;
     font-family: Arial;
     width: 70%;
     margin: auto;
@@ -17,7 +15,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin: 0;
+  margin: 0px;
   list-style: none;
 }
 
@@ -25,6 +23,8 @@
     font-family: arial;
     font-style: normal;
     text-decoration: none; 
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .navbar-link {

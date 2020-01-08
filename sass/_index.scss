@@ -1,15 +1,22 @@
 // Partial for the Index page
 
-.image-container, #main-image {
+div.image-container, #main-image {
   width: 70%; 
-  height: 500; 
+  margin: auto; 
+}
+
+img {
+  border-radius: 10px;
 }
 
 .main-image {
-  width: 70%;
+  border-radius: 10px;
+  align-content: center;
 }
 
-div.image-details {
+.image-details {
+  margin: auto;
+  margin-bottom: 15px;
   font-family: arial;
   font-size: 14px;
   color: #092d69; 

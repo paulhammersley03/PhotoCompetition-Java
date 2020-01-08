@@ -37,34 +37,36 @@
 </div>
 
 <!-- Page content -->
-<div class='main-content' id='main'>
-<table>
-    
-    <td>
-        <h1 class="page-title">Upload Your Picture</h1>
-        <form action="" method="get" class="form-example">
-            <div class="upload-form">
-                Enter your name:
-                <input type="text" id="author" required>
-            </div>
-            <div class="upload-form">
-                Image Name:
-                <input type="text" id="image" required>
-            </div>
-            <div class="upload-form">
-                License:
-                <input type="text" id="licence" required>
-            </div>
-            <div class="voting-buttons">
-                <input class="upload-button" name="Image-File" id="Image-File" type="file" required>
-            </div>
+<div class='main-content'>
+    <h1 class="page-title">Upload Your Picture</h1>
+        <table class="upload">                
+            <form action="" method="get" class="upload-form">
+                        
+            <tr>
+                <td><label>Enter your name:</label></td>
+                <td><input type="text" id="author" required></td>
+            </tr>
+            <tr>    
+                <td><label>Image Name:</label></td>
+                <td><input type="text" id="image" required></td>
+            </tr>
+            <tr>
+                <td><label>License:</label></td>
+                <td><select id="licence" required>
+                    <option value = "CC_BY">CC_BY</option>
+                    <option value = "CC_BY_SA">CC_BY_SA</option>
+                    <option value = "CC_BY_ND">CC_BY_ND</option>
+                </select></td>
+            </tr>    
+            <tr>
+                <td></td>
+                <td><input class="upload-button" name="Image-File" id="Image-File" type="file" required></td>
+            </tr> 
+        </table>
             <div class="voting-buttons">
                 <button class="voting-button upload-button" id="Upload">Upload</button>
             </div>
-          </form>
-    </td>
-    
-</table>
+        </form>       
 </div>
 
 </body>

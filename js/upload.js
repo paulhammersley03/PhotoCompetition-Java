@@ -9,6 +9,8 @@ function uploadImage(){
         name: $('#image').val(),
         license: $('#licence').val()
   };
+
+  console.log($('#licence').val());
 //convert text inputs from form into Json format (text)
   const blob = new Blob([JSON.stringify(metaDataObject)], {type : 'application/json'});
 //does something with the upload file???

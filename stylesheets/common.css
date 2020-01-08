@@ -1,13 +1,20 @@
-.image-container, #main-image {
+div.image-container, #main-image {
   width: 70%;
-  height: 500;
+  margin: auto;
+}
+
+img {
+  border-radius: 10px;
 }
 
 .main-image {
-  width: 70%;
+  border-radius: 10px;
+  align-content: center;
 }
 
-div.image-details {
+.image-details {
+  margin: auto;
+  margin-bottom: 15px;
   font-family: arial;
   font-size: 14px;
   color: #092d69;
@@ -41,8 +48,6 @@ div.image-details {
 .navbar {
   background-color: #44a3cf;
   height: 100px;
-  -webkit-box-align: center;
-  align-self: center;
   font-family: Arial;
   width: 70%;
   margin: auto;
@@ -55,7 +60,7 @@ div.image-details {
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin: 0;
+  margin: 0px;
   list-style: none;
 }
 
@@ -63,6 +68,8 @@ div.image-details {
   font-family: arial;
   font-style: normal;
   text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .navbar-link {
@@ -81,10 +88,11 @@ body {
   background-color: white;
 }
 
-div.main-content {
+.main-content {
   background-color: #44a3cf;
   width: 70%;
-  align-content: center;
+  font-family: arial;
+  color: #092d69;
   text-align: center;
   border: 2px solid #092d69;
   border-radius: 10px;
@@ -92,20 +100,28 @@ div.main-content {
   margin-top: 15px;
 }
 
-div.image-container {
-  text-align: center;
-}
-
 .image-details {
   width: 50%;
-  align-self: center;
-  border: none;
 }
 
 h1 {
   font-family: arial;
   font-size: 24px;
   color: #092d69;
+  font-weight: normal;
+}
+
+.about {
+  margin: auto;
+}
+
+.upload {
+  width: 60%;
+  margin: auto;
+}
+
+.details {
+  text-align: center;
 }
 
 /*# sourceMappingURL=common.css.map */
