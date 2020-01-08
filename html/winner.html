@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <!-- Essential meta tags -->
     <meta charset="utf-8">
@@ -24,11 +24,13 @@
 <body>
 
 <!-- Navigation bar -->
-<div class="navbar" id='nav-bar'>
+<div class="navbar">
     <ul class="navbar-list">
         <li class="navbar-item"><a class="navbar-link" href="index.html">Photo Competition</a></li>
         <li class="navbar-item">|</li>
         <li class="navbar-item"><a class="navbar-link" href="winner.html">Top Voted</a></li>
+        <li class="navbar-item">|</li>
+        <li class="navbar-item"><a class="navbar-link" href="upload.html">Upload</a></li>
         <li class="navbar-item">|</li>
         <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
     </ul>
@@ -40,15 +42,16 @@
 
     <td class="main-content">
 
-        <center><h1 class="page-title">Photo Competition Winner</h1></center>
+        <h1 class="page-title">Photo Competition Winner</h1>
 
-        <center><div class="image-container">
+        <div class="image-container">
             <!-- src and alt attribute will be populated by index.js on page load -->
-            <img id="main-image" src="">
-        </div></center>
+            <img id="main-image" src="" alt="main image">
+        </div>
             
             <!-- Image Details -->
-        <center><table class="image-details">
+        <div class="image-details" id='main'>
+        <table class="details">
             <tbody>
                 <tr>
                     <td><b>Author</b></td>
@@ -67,7 +70,8 @@
                     <td id="licence"></td>
                 </tr>
             </tbody>
-        </table></center>
+        </table>
+    </div>
     
     </td>
 
