@@ -38,11 +38,11 @@
 
 
 <!-- Page content -->
-<div class='main-content'>
+<div class='main-content' role="main">
 
     <td class="main-content">
 
-        <h1 class="page-title">Photo Competition Winner</h1>
+        <h1 class="page-title" tabindex="0">Photo Competition Winner</h1>
 
         <div class="image-container">
             <!-- src and alt attribute will be populated by index.js on page load -->
@@ -53,20 +53,20 @@
         <div class="image-details" id='main'>
         <table class="details">
             <tbody>
-                <tr>
+                <tr tabindex="0">
                     <td><b>Author</b></td>
                     <td id="author"></td>
                 </tr>
-                <tr>
+                <tr tabindex="0">
                     <td><b>Name</b></td>
                     <td id="name"></td>
                 </tr>
-                <tr>
-                    <td><b>Score</b></td>
+                <tr tabindex="0">
+                    <td><b>Score</b></td>   
                     <td id="score"></td>
                 </tr>
-                <tr>
-                    <td><b>Licence</b></td>
+                <tr tabindex="0">
+                    <td ><b>Licence</b></td>
                     <td id="licence"></td>
                 </tr>
             </tbody>
@@ -75,6 +75,10 @@
     
     </td>
 
+</div>
+
+<div>
+    <p class="footer"><a class="navbar-link" href="moderator.html">Admin</a></p>
 </div>
 
 </body>

@@ -39,43 +39,47 @@
 
 
 <!-- Page content -->
-<div class='main-content' id='main'>
-    <h1 class="page-title">Photo Competition</h1>
+<div class='main-content' id='main' role="main">
+    <h1 class="page-title" tabindex="0">Photo Competition</h1>
 
-    <div class="image-container">
+    <div class="image-container" tabindex="0">
     <!-- src and alt attribute will be populated by index.js on page load -->
         <img id="main-image" src="" alt="main image">
     </div>
 
     <!-- Voting Buttons -->
     <div class="voting-buttons">
-        <button class="voting-button vote-up" id="Like">Love it</button>
-        <button class="voting-button vote-down" id="DontLike">Hate it</button>
+        <button class="voting-button vote-up" id="Like" tabindex="0">Love it</button>
+        <button class="voting-button vote-down" id="DontLike" tabindex="0">Hate it</button>
     </div>
 
     <!-- Image Details -->
     <div class="image-details">    
         <table class="details">
             <tbody>
-                <tr>
+                <tr tabindex="0">
                     <td><b>Author</b></td>
                     <td id="author"></td>
                 </tr>
-                <tr>
+                <tr tabindex="0">
                     <td><b>Name</b></td>
                     <td id="name"></td>
                 </tr>
-                <tr>
+                <tr tabindex="0">
                     <td><b>Score</b></td>   
                     <td id="score"></td>
                 </tr>
-                <tr>
-                    <td><b>Licence</b></td>
+                <tr tabindex="0">
+                    <td ><b>Licence</b></td>
                     <td id="licence"></td>
                 </tr>
             </tbody>
         </table>
     </div>
+</div>
+
+<div>
+    <p class="footer"><a class="navbar-link" href="moderator.html">Admin</a></p>
 </div>
 
 </body>

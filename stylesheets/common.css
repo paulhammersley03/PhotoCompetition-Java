@@ -1,5 +1,5 @@
 div.image-container, #main-image {
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 
@@ -122,6 +122,23 @@ h1 {
 
 .details {
   text-align: center;
+}
+
+.footer {
+  text-align: center;
+  font-family: arial;
+  font-size: 10px;
+}
+
+.image-placeholder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-image {
+  width: 30%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=common.css.map */

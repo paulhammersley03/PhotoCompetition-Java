@@ -37,21 +37,21 @@
 </div>
 
 <!-- Page content -->
-<div class='main-content'>
-    <h1 class="page-title">Upload Your Picture</h1>
+<div class='main-content' role="main">
+    <h1 class="page-title" tabindex="0">Upload Your Picture</h1>
         <table class="upload">                
             <form action="" method="get" class="upload-form">
                         
             <tr>
-                <td><label>Enter your name:</label></td>
+                <td><label tabindex="0">Enter your name:</label></td>
                 <td><input type="text" id="author" required></td>
             </tr>
             <tr>    
-                <td><label>Image Name:</label></td>
+                <td><label tabindex="0">Image Name:</label></td>
                 <td><input type="text" id="image" required></td>
             </tr>
             <tr>
-                <td><label>License:</label></td>
+                <td><label tabindex="0">License:</label></td>
                 <td><select id="licence" required>
                     <option value = "CC_BY">CC_BY</option>
                     <option value = "CC_BY_SA">CC_BY_SA</option>
@@ -60,13 +60,19 @@
             </tr>    
             <tr>
                 <td></td>
-                <td><input class="upload-button" name="Image-File" id="Image-File" type="file" required></td>
+                
+                    <td><input class="voting-button" name="Image-File" id="Image-File" type="file" required></td>
+                    
             </tr> 
         </table>
             <div class="voting-buttons">
                 <button class="voting-button upload-button" id="Upload">Upload</button>
             </div>
         </form>       
+</div>
+
+<div>
+    <p class="footer"><a class="navbar-link" href="moderator.html">Admin</a></p>
 </div>
 
 </body>
